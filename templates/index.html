@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+
+    <title>SMART AGRICULTURE</title>
+    <style>
+        
+        body{
+    background-color:rgb(241, 233, 157);
+    margin-left:0px;
+    background-image:url("{{url_for('static', filename='image.avif')}}");
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Instrument Serif', serif;
+}
+
+.mainHeading {
+    text-align:center;
+    text-decoration:underline;
+    font-size:50px;
+}
+
+.heading2,.container{
+    margin-top:20px;
+    text-align:center;
+    font-size:36px;
+}
+
+.container{
+    font-size:25px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.group{
+    font-size:22px;
+    margin-left:50px;
+    margin-top:85px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.headtext{
+    text-decoration:underline;
+}
+/* .result{
+    text-align:center;
+} */
+    </style>
+</head>
+<body>
+    <h1 class="mainHeading">Tomato Leaf Disease Detection using Machine Learning</h1>
+
+    <h2 class="heading2">Please Upload the image of your Leaf</h2>
+    <form action="/predict" method="post" enctype="multipart/form-data" class="container">
+        <label for="image">Select an image:&nbsp;</label>
+        <input type="file" id="image" name="image"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Here print the resuult -->
+    <div class="result"></div>
+
+    <div class="group">
+        <div class="headtext">Group Members :-</div>
+        <ul>
+            <li>AMAN KUMAR</li>
+            <li>DINESH MALLIK</li>
+            <li>SHUBHAM TIWARI</li>
+            <li>ANKIT AMAN</li>
+            <li>DR.HITESH MOHAPATRA</li>
+            <li>SOMYA RANJAN MISHRA</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

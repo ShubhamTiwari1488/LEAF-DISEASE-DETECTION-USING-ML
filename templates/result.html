@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tomato Plant Disease Classifier</title>
+</head>
+<style>
+    body{
+    background-color:rgb(241, 233, 157);
+    margin-left:0px;
+    background-image:url("{{url_for('static', filename='image.avif')}}");
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Instrument Serif', serif;
+}
+
+.mainHeading {
+    text-align:center;
+    text-decoration:underline;
+    font-size:50px;
+}
+
+.heading2,.container{
+    margin-top:20px;
+    text-align:center;
+    font-size:36px;
+}
+
+.container{
+    font-size:25px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.group{
+    font-size:22px;
+    margin-left:50px;
+    margin-top:85px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.headtext{
+    text-decoration:underline;
+}
+/* .result{
+    text-align:center;
+} */
+
+.output{
+    
+    margin-top:22%;
+    margin-left:26%;
+}
+</style>
+<body>
+    <div>
+    <h1 class="output">Prediction: {{ prediction }}</h1>
+    </div>
+</body>
+</html>
